@@ -1,0 +1,12 @@
+@mixin background-size($size) {
+    -webkit-background-size: ($size);
+    -moz-background-size: ($size);
+    -o-background-size: ($size);
+    background-size: ($size);
+}
+@mixin transition($tran) {
+    -webkit-transition: ($tran);
+    -moz-transition: ($tran);
+    -o-transition: ($tran);
+    transition: ($tran);
+}

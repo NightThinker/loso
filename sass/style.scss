@@ -1,0 +1,184 @@
+@import ' E:/angular/project/loso/sass/fonts';
+@import ' E:/angular/project/loso/sass/mixins';
+@import ' E:/angular/project/loso/sass/colors';
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $raleway;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+// ==================== Generic CSS ====================
+.section-title {
+	padding-top: 90px;
+	padding-bottom: 50px;
+	color: #333;
+	h2 {
+		position: relative;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	h2:after {
+		content: "";
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		width: 60px;
+		height: 1px;
+		background-color: $link-color;
+		margin-left: -30px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 45px;
+	}
+}
+
+// ================== Header ==================================
+.header {
+	background-image: url("../images/header-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	@include background-size(cover); 
+}
+.header-overlay {
+	background-color: rgba(31, 31, 31, 0.75);
+}
+.logo {
+	padding-bottom: 50px;
+}
+.header-text {
+	color: #fff;
+	h1 {
+		font-size: 35px;
+		font-weight: 300;
+		line-height: 45px;
+		padding-top: 30px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 17px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+}
+.header-btns {
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+.btn-project,
+.btn-project:focus,
+.btn-project:active,
+.btn-project:visited {
+	background: transparent;
+	border: 1px solid $link-color;
+	padding-top: 10px 30px 10px 30px;
+	font-size: 19px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	@include transition(all 1s);
+}
+.btn-project:hover {
+	background-color: $link-color;
+	color: #fff;
+}
+.btn-tour,
+.btn-tour:focus,
+.btn-tour:active,
+.btn-tour:visited {
+	color: $tour-color;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: 500;
+	background: transparent;
+	@include transition(all 1s);
+}
+.btn-tour:hover {
+	color: #fff;
+}
+
+
+.header-iphone {
+	img {
+		width: 100%;
+	}
+}
+
+
+
+// ===================== About us ================
+
+.choose-us-wraper {
+	padding-top: 50px;
+}
+.about-iphone {
+	img {
+		margin-top: 8px;
+	}
+}
+.choose-us-title {
+	padding-bottom: 50px;
+	h2 {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 30px;
+		line-height: 37px;
+		position: relative;
+	}
+	h2:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 0;
+		width: 70px;
+		height: 1px;
+		background-color: $link-color;
+	}
+	p {
+		margin-top: 40px;
+		font-size: 19px;
+		line-height: 24px;
+	}
+}
+.choose-us-item {
+	position: relative;
+	padding-bottom: 4px;
+	padding-left: 80px;
+	div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		i {
+			font-size: 55px;
+			color: $link-color;
+			@include transition(all 1s);
+		}
+	}
+	h3 {
+		color: #343434;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 800;
+
+	}
+	p {
+		color: #727272;
+		font-size: 15px;
+
+	}
+}
